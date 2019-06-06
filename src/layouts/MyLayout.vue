@@ -11,26 +11,26 @@
             <q-route-tab icon="fas fa-briefcase" :label="$t('workexperience')" to="work-experience" />
             <q-route-tab icon="fas fa-project-diagram" :label="$t('project')" to="/projects" />
             <q-space></q-space>
-            <select-language @langChange="change"></select-language>
+            <select-language></select-language>
           </q-tabs>
         </div>
       </div>
     </q-header>
     <q-page-container>
       <br>
-      <router-view :locale="this.$i18n.locale" :key="langKey"/>
+      <router-view/>
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
 import { openURL } from 'quasar'
-import i18n from 'src/i18n/messages'
+// import i18n from 'src/i18n/messages'
 import selectLanguage from 'src/components/selectLanguage'
 
 export default {
   name: 'MyLayout',
-  i18n,
+  // i18n,
   components: {
     selectLanguage
   },
@@ -41,25 +41,18 @@ export default {
     }
   },
   methods: {
-    openURL,
-    change (lang) {
-      this.$i18n.locale = lang
-      console.log('layout.locale:', this.locale)
-      console.log('layout.i18n:', this.$i18n.locale)
-      this.langKey++
-    }
+    openURL
+    // change (lang) {
+    //   // this.$i18n.locale = lang
+    //   // console.log('layout.locale:', this.locale)
+    //   console.log('layout.i18n:', this.$i18n.locale)
+    //   // this.langKey++
+    // }
 
   },
   created () {
     // this.$i18n.locale = this.locale
   }
-  // watch: {
-  //   locale (val) {
-  //     // this.$i18n.locale = val
-  //     console.log('layout.locale:', this.$i18n.locale)
-  //     this.langKey++
-  //   }
-  // }
 }
 </script>
 

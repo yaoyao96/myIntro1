@@ -21,10 +21,10 @@
 
 <script>
 // import languages from 'quasar/lang/index.json'
-import i18n from 'src/i18n/messages.js'
+// import i18n from 'src/i18n/messages.js'
 
 export default {
-  i18n,
+  // i18n,
   data () {
     return {
       value: true,
@@ -56,8 +56,9 @@ export default {
       import(`quasar/lang/${lang}`).then(lang => {
         this.$q.lang.set(lang.default)
       })
+      this.$i18n.locale = lang
+      console.log('lang isoName>>', this.$i18n.locale)
       this.$emit('langChange', lang)
-      console.log('lang isoName>>', this.$q.lang.isoName)
     }
   },
 
@@ -65,7 +66,7 @@ export default {
     // this.langOptions = languages.map(lang => ({
     //   label: lang.nativeName, value: lang.isoName
     // }))
-    console.log('lang>>', this.$q.lang)
+    // console.log('lang>>', this.$q.lang)
   }
 }
 </script>

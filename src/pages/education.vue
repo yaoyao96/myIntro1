@@ -61,9 +61,9 @@
   </div>
 </template>
 <script>
-import i18n from 'src/i18n/messages'
+// import i18n from 'src/i18n/messages'
 export default {
-  i18n,
+  // i18n,
   props: {
     locale: null
   },
@@ -74,7 +74,7 @@ export default {
   },
   created () {
     // console.log('routerpara?>>', this.locale)
-    this.$i18n.locale = this.locale
+    // this.$i18n.locale = this.locale
   }
 }
 </script>

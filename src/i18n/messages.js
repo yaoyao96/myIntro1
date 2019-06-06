@@ -8,6 +8,10 @@ const messages = {
   // 简体中文
   'zh-hans': zh
 }
-export default {
-  messages
-}
+
+// should avoid wrap a object with {}
+// export default {
+//   messages
+// }
+
+export default messages
