@@ -4,7 +4,7 @@
 export default {
   failed: 'Action failed',
   success: 'Action was successful',
-  education: 'Education',
+  education1: 'Education',
   skillset: 'Skill Set',
   aboutme: 'About Me',
   workexperience: 'Work Experience',
@@ -17,15 +17,23 @@ export default {
     becomePartner: 'Become a partner',
     cancel: 'Cancel'
   },
-  bachelor: {
-    heading: 'Undergraduate start',
-    end: 'Good Bye',
-    schoolname: 'SCUT',
-    startdate: 'September 1, 2014',
-    graduatedate: 'July 1, 2018',
-    mainstuff: 'Industrial Engineering',
-    major: 'Industrial Engineering',
-    degree: 'Bachelor'
+  education: {
+    heading1: 'Undergraduate',
+    end1: 'GPA 3.5/4',
+    schoolname1: 'South China University of Technology',
+    startdate1: 'September 1, 2014',
+    graduatedate1: 'July 1, 2018',
+    mainstuff1: 'Main Course: Supply Chain Management / Inventory Management / Business Intelligence etc..',
+    major1: 'Industrial Engineering',
+    degree1: 'Bachelor',
+    heading2: 'Graduate',
+    end2: 'GPA 4.34/5',
+    schoolname2: 'National University of Singapore',
+    startdate2: 'August 1, 2018',
+    graduatedate2: 'August 2, 2019',
+    mainstuff2: 'Main Course: C# / Java / Python / SQL / .Net / Spring MVC / Android / App Development Life Cycle / Software Engineering etc..',
+    major2: 'System Analysis(of Software Engineering)',
+    degree2: 'Graduate Diploma'
   },
   intro: {
     hey: 'Hey! So nice you find me!',
@@ -37,5 +45,9 @@ export default {
     dropEmail: 'just drop me an email',
     brief5: 'or view my profile in'
 
+  },
+  skill: {
+    proficiencyLevel: 'Proficiency Level',
+    Html5: 'hello'
   }
 }
