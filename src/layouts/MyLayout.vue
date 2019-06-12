@@ -6,7 +6,7 @@
           <q-tabs>
             <q-space></q-space>
             <q-route-tab icon="fas fa-tools" :label="$t('skillset')" to="/skill-set"/>
-            <q-route-tab icon="fas fa-graduation-cap" :label="$t('education')" :to="{ path: '/education'}" />
+            <q-route-tab icon="fas fa-graduation-cap" :label="$t('education1')" :to="{ path: '/education'}" />
             <q-route-tab :label="$t('aboutme')" icon="far fa-grin-squint-tears" to="/"></q-route-tab>
             <q-route-tab icon="fas fa-briefcase" :label="$t('workexperience')" to="work-experience" />
             <q-route-tab icon="fas fa-project-diagram" :label="$t('project')" to="/projects" />
