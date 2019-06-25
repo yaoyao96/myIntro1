@@ -6,10 +6,11 @@
     <q-img src="./assets/KAPPS.png"></q-img>
       </q-item-section>
       <q-item-section class="col-7 q-gutter-sm-none q-gutter-md">
-        <display-field icon-name="face" iconColor="yellow" text="place"></display-field>
-        <display-field icon-name="face" text="position"></display-field>
-        <display-field icon-name="face" text="date"></display-field>
-        <display-field icon-name="face" text="company brief"></display-field>
+        <display-field icon-name="fas fa-location-arrow" iconColor="yellow" :text="$t('workExp1.place')"></display-field>
+        <display-field icon-name="fas fa-address-card" :text="$t('workExp1.position')"></display-field>
+        <display-field icon-name="fas fa-calendar" :text="$t('workExp1.date')"></display-field>
+        <display-field icon-name="fas fa-building" :text="$t('workExp1.companyBrief')"></display-field>
+        <display-field icon-name="fab fa-internet-explorer"><template v-slot="web"><a href="$t('workExp1.website')">Link</a></template></display-field>
       </q-item-section>
     </q-item>
     <div class="q-pa-lg card">
@@ -17,10 +18,7 @@
         <!--<q-icon name="face" style="font-size: 32px"></q-icon>-->
         <!--<h6 class="text-weight-light q-px-sm">Main Task</h6></q-chip>-->
       <div class="row no-wrap q-gutter-md q-ma-sm">
-        <main-task-card></main-task-card>
-        <main-task-card></main-task-card>
-        <main-task-card></main-task-card>
-        <main-task-card></main-task-card>
+        <main-task-card class="col-3" v-for="n in 4" :key="n"></main-task-card>
       </div>
     </div>
     <br>
